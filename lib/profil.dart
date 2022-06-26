@@ -1,10 +1,11 @@
 import 'package:letstudy/home.dart';
 import 'package:flutter/material.dart';
-import 'package:letstudy/main.dart';
+import 'package:letstudy/screens/login_screens.dart';
 
 void main() => runApp(MaterialApp(
       home: ProfileApp(),
     ));
+bool pressed = false;
 
 class ProfileApp extends StatelessWidget {
   @override
@@ -16,7 +17,7 @@ class ProfileApp extends StatelessWidget {
               gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Color.fromARGB(255, 243, 240, 240), Colors.blue])),
+                  colors: [Color.fromARGB(255, 243, 240, 240), Colors.black])),
           child: Container(
             width: double.infinity,
             height: 350.0,
@@ -61,7 +62,7 @@ class ProfileApp extends StatelessWidget {
                                 Text(
                                   "Skills",
                                   style: TextStyle(
-                                    color: Colors.blue,
+                                    color: Colors.black,
                                     fontSize: 20.0,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -85,7 +86,7 @@ class ProfileApp extends StatelessWidget {
                                 Text(
                                   "On going task",
                                   style: TextStyle(
-                                    color: Colors.blue,
+                                    color: Colors.black,
                                     fontSize: 20.0,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -109,7 +110,7 @@ class ProfileApp extends StatelessWidget {
                                 Text(
                                   "Education",
                                   style: TextStyle(
-                                    color: Colors.blue,
+                                    color: Colors.black,
                                     fontSize: 20.0,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -145,7 +146,7 @@ class ProfileApp extends StatelessWidget {
               Text(
                 "Bio:",
                 style: TextStyle(
-                    color: Colors.blue,
+                    color: Colors.black,
                     fontStyle: FontStyle.normal,
                     fontSize: 28.0),
               ),
@@ -183,7 +184,7 @@ class ProfileApp extends StatelessWidget {
                 gradient: LinearGradient(
                     begin: Alignment.centerRight,
                     end: Alignment.centerLeft,
-                    colors: [Color.fromARGB(255, 193, 178, 178), Colors.blue]),
+                    colors: [Color.fromARGB(255, 193, 178, 178), Colors.black]),
                 borderRadius: BorderRadius.circular(30.0),
               ),
               child: Container(
